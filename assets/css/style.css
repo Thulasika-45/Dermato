@@ -1,0 +1,1137 @@
+/* Full Page Background for the Content Below Header */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+/* Header*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    min-height: 60px; 
+    background: transparent !important;
+}
+/*header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1); /* light transparency */
+   /* backdrop-filter: blur(10px);          /* soft blur effect */
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  */
+
+/* Background Image Starts Below Header */
+.hero-section {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #533829;
+    margin-top: 0; /* ❌ This could be causing the extra white space */
+    position: relative;
+   /* top: 70px; /* ✅ Instead of margin, push it down */}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 70px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Logo */
+.logo-container img {
+    width: auto; /* ✅ Adjust logo size */
+    height: auto;
+    max-height: 80px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F9E6E2; /* ✅ Gold Hover Effect */
+}
+/* Mobile View - Collapsed Navbar Background */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #F9E6E2;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+/* About Section (No Changes as Requested) */
+.about-bg {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #5D4037; /* Brownish Text */
+}
+
+/* About Content */
+.about-content {
+    background: rgba(255, 255, 255, 0.8); /* Light Background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px; /* ✅ Fixed width issue */
+}
+
+/* About Logo */
+.about-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* About Title */
+.about-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+}
+
+/* About Text */
+.about-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Diagnose Page Background */
+.diagnose-bg {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;  /* Ensure full viewport height */
+    
+    /* Centering Content Box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Offset to avoid overlap with fixed header */
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+/* Centering the Diagnose Content Box */
+.diagnose-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 650px;
+    width: 90%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+/* Diagnose Title */
+.diagnose-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: #533829;
+    margin-bottom: 20px;
+    text-align: center; /* Center only the "Diagnose" text */
+}
+
+/* Diagnose List */
+.diagnose-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.diagnose-list li {
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+/* Diagnose Links */
+.diagnose-links {
+    margin-top: 20px;
+}
+
+.diagnose-links .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 10px;
+    background: #533829;
+    color: #fff;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.diagnose-links .btn:hover {
+    background: #402d1f;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .diagnose-content {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .diagnose-title {
+        font-size: 28px;
+    }
+
+    .diagnose-list li {
+        font-size: 16px;
+    }
+
+    .diagnose-links .btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Signup Section */
+.signup-bg {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to start */
+    text-align: center;
+    color: #5D4037; /* Brownish Text */
+    padding-top: 170px; /* Moves content box down */
+}
+
+/* Signup Form Container */
+.signup-content {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+}
+
+/* Title */
+.signup-title {
+    font-size: 24px;
+    color: #5d4037;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #5d4037;
+}
+
+.signup-form input {
+    padding: 10px;
+    border: 1px solid #bcaaa4;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: 0.3s ease-in-out;
+}
+
+.signup-form input:focus {
+    border-color: #795548;
+    box-shadow: 0 0 5px rgba(121, 85, 72, 0.5);
+}
+
+/* Submit Button */
+.signup-form button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background-color: #795548;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.signup-form button:hover {
+    background-color: #5d4037;
+    transform: scale(1.05);
+}
+/* Background Styling */
+.login-bg {
+    min-height: 100vh;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    text-align: center;
+}
+
+/* Login Box Styling */
+.login-container {
+    
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* Title Styling */
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(188, 174, 174, 0.9); /* ✅ Corrected */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Button Styling */
+button {
+    background: #533829; /* Brown color matching theme */
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: #3d2a20;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #4facfe;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Forgot Password Page Background */
+.forgot-password-bg {
+    min-height: 100vh;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Forgot Password Form Container */
+.forgot-password-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Forgot Password Title */
+.forgot-password-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #533829;
+    margin-bottom: 15px;
+}
+
+/* Forgot Password Form */
+.forgot-password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(188, 174, 174, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Labels */
+.forgot-password-form label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    width: 100%;
+}
+
+/* Input Fields */
+.forgot-password-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.forgot-password-form input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Submit Button */
+.forgot-password-form button {
+    background: #533829;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.forgot-password-form button:hover {
+    background-color: #402d1f;
+    transform: scale(1.05);
+}
+
+/* Link to Login */
+.forgot-password-form .back-to-login {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #533829;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.forgot-password-form .back-to-login:hover {
+    color: #795548;
+}
+/* Send OTP Page Background */
+.send-otp-bg {
+    min-height: 100vh;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* OTP Form Container */
+.send-otp-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* OTP Title */
+.send-otp-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #533829;
+    margin-bottom: 15px;
+}
+
+/* OTP Form */
+.send-otp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(188, 174, 174, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Labels */
+.send-otp-form label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    width: 100%;
+}
+
+/* Input Fields */
+.send-otp-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.send-otp-form input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Submit Button */
+.send-otp-form button {
+    background: #533829;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.send-otp-form button:hover {
+    background-color: #402d1f;
+    transform: scale(1.05);
+}
+
+/* Resend OTP Link */
+.send-otp-form .resend-otp {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #533829;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.send-otp-form .resend-otp:hover {
+    color: #795548;
+}
+/* Verify OTP Page Background */
+.verify-otp-bg {
+    min-height: 100vh;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* OTP Verification Container */
+.verify-otp-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* OTP Verification Title */
+.verify-otp-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #533829;
+    margin-bottom: 15px;
+}
+
+/* OTP Form */
+.verify-otp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(188, 174, 174, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Labels */
+.verify-otp-form label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    width: 100%;
+}
+
+/* Input Fields */
+.verify-otp-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.verify-otp-form input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Submit Button */
+.verify-otp-form button {
+    background: #533829;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.verify-otp-form button:hover {
+    background-color: #402d1f;
+    transform: scale(1.05);
+}
+
+/* Resend OTP Link */
+.verify-otp-form .resend-otp {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #533829;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.verify-otp-form .resend-otp:hover {
+    color: #795548;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+/* Reset Password Page Background */
+.reset-password-bg {
+    min-height: 100vh;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Reset Password Container */
+.reset-password-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reset Password Title */
+.reset-password-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #533829;
+    margin-bottom: 15px;
+}
+
+/* Reset Password Form */
+.reset-password-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+   /* background: rgba(188, 174, 174, 0.9);*/
+    padding: 20px;
+    border-radius: 8px;
+    /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);*/
+}
+
+/* Form Labels */
+.reset-password-form label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    width: 100%;
+}
+
+/* Input Fields */
+.reset-password-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.reset-password-form input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Submit Button */
+.reset-password-form button {
+    background: #533829;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.reset-password-form button:hover {
+    background-color: #402d1f;
+    transform: scale(1.05);
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.navbar-toggler.dmy{
+        position: absolute;
+        width: auto;
+        right: 0px;
+        background: transparent;
+}*/
+.navbar-toggler.dmy {
+    position: fixed; /* Keeps it in place even when the menu expands */
+    width: auto;
+    right: 20px; /* Adjust as needed */
+    top: 64px; /* Adjust vertical position */
+    background: transparent;
+    z-index: 1050; /* Ensures it stays on top */
+}
+/* Background section */
+.diagnose-bg {
+    min-height: 100vh;
+    background-color: #fcefee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px 40px;
+    box-sizing: border-box;
+}
+
+/* Title Styling */
+.diagnose-title {
+    font-size: 28px;
+    color: #803939;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Flex container for guideline boxes */
+.guidelines-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Each guideline box */
+.guideline-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    width:45%;
+    flex: 1 1 300px;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+
+/* Checklist and Avoid list */
+.diagnose-list {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+.diagnose-list li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.avoid-title {
+    font-weight: bold;
+    color: #c0392b;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.next-button-wrapper {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    .diagnose-title {
+        font-size: 22px;
+    }
+
+    .guidelines-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guideline-box {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+
+
+.diagnosis-bg {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #5D4037;
+    overflow: hidden;
+}
+
+/* Main card container */
+.diagnosis-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #3b2b28;
+}
+
+/* Diagnosis title */
+.diagnose-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #3b2b28;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Image styling */
+.diagnosis-image {
+    width: 250px;          /* Set your desired fixed width */
+    height: 250px;         /* Set your desired fixed height */
+    object-fit: contain;   /* or use 'cover' if you prefer it to fill the box */
+    display: block;
+    margin: 0 auto 20px auto;  /* Center the image */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+
+/* Paragraphs for content */
+.diagnosis-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a3a33;
+    margin: 10px 0;
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .diagnosis-card {
+        padding: 20px;
+    }
+
+    .diagnose-title {
+        font-size: 22px;
+    }
+
+    .diagnosis-image {
+        width: 90%;
+    }
+
+    .diagnosis-card p {
+        font-size: 14px;
+    }
+}
+
+ /* Background with full height */
+.profile-bg {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 60px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #5D4037;
+}
+
+/* Profile container 
+.profile-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}*/
+.profile-container {
+background: rgba(255, 255, 255, 0.95);
+    padding:30px 50px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    width: 95%;
+    max-height: 400px;
+overflow-y: auto;
+
+    /* Centering the content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Title */
+.profile-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #533829;
+}
+
+/* Info section */
+.profile-info {
+    margin-bottom: 15px;
+}
+
+.profile-info label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #795548;
+}
+
+.profile-info input,
+.profile-info select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Actions */
+.profile-actions {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.profile-actions .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #533829;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.profile-actions .btn:hover {
+    background-color: #402A1F;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-title {
+        font-size: 24px;
+    }
+
+    .profile-info input,
+    .profile-info select {
+        font-size: 14px;
+    }
+
+    .profile-actions .btn {
+        font-size: 14px;
+        width: 100%;
+    }
+}
