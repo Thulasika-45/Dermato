@@ -2,6 +2,7 @@
 
 **Dermato** is an AI-powered web application that detects **skin diseases from images** using a trained **CNN model**.  
 It combines a **PHP frontend** and a **Flask backend** to deliver quick and accurate skin diagnosis.
+
 https://dermato.infinityfreeapp.com
 
 ---
